@@ -1,0 +1,917 @@
+@import "_mixins"
+
+.header
+    @include flex-center(100%,100%)
+    flex-direction: column
+    
+.header-inner
+    @include size(87%, 140px, )
+    
+.header-top
+    @include flex-space-between(100%,42px)
+    
+.menu
+    @include size(54%,100%)
+    
+    .menu-list
+        @include flex-space-between(100%,100%)
+    
+    .menu-item
+        list-style-type: none
+    .menu-link
+        @include text-two(14px, #4F5159 , 100% , 'SF Pro Display' )
+
+.info
+    @include flex-space-evenly(41%,100%)
+
+.info-link
+    position: relative
+    display: inline-block
+    padding-left: 25px
+    @include text-two(14px, #4F5159 , 100% , 'SF Pro Display',none )
+    &::before
+        content: ''
+        position: absolute
+        left: 3px
+        @include size(14px, 14px )
+        background: url(../img/menu.png)
+
+.info-container
+    @include flex-align-center(61%,100%)
+    .info-tel
+        position: relative
+        display: inline-block
+        padding-left: 29px
+        @include text-two(14px, auto , 100% , 'SF Pro Display',none )
+        ::before
+            content: ''
+            position: absolute
+            left: 0
+            @include size(16px, 16px )
+            background: url(../img/vector.png)
+    .info-working-mode
+        @include text-two(14px, #4F5159 , 100% , 'SF Pro Display',none )
+
+.menu-lang
+    @include flex-center(5%,100%)
+    .lang
+        @include text-two(14px, #4F5159 , 100% , 'SF Pro Display',none )
+        margin-left: 9px
+
+.header-bottom
+    @include flex-align-center(100%,57%)
+
+.logo
+    margin-right: 20px  
+    
+.weather
+    position: relative
+    display: inline-block
+    padding-left: 29px
+    @include text-two(20px, auto , 20px , 'SF Pro Display',none )
+    font-weight: 800
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        margin-top: -5px
+        @include size(24px, 24px )
+        background: url(../img/weather.png)
+
+.city
+    position: relative
+    margin-right: 15px
+    margin-left: 9px
+    @include text( 16px, #4F5159 , 100% , 'SF Pro Display')
+    font-weight: 400
+    &::after
+        content: ''
+        right: unset
+        margin-top: 3px
+        right: -18px
+        position: absolute
+        background: url(../img/down.png)
+        @include size(13px , 8px)
+
+.exchange-rates
+    @include flex-align-center(auto,auto)
+    margin-left: 32px
+    
+.usd
+    @include flex-align-center(auto,auto)
+    margin-right: 17px
+    .usd-img
+        @include size(auto, 16px)
+        margin-right: 5px
+
+.currency-price
+    @include text( 16px, #131315 , 100% , 'SF Pro Display')
+    font-weight: 400
+    margin-right: 3px
+
+.currency-cursor
+    @include size(7px, 12px)
+    
+.eur
+    @include flex-align-center(auto,auto)
+    .eur-img
+        @include size(auto, 16px)
+        margin-right: 3px
+
+.search
+    position: relative
+    margin-left: 44px
+    flex: 1
+
+.search-container
+    @include flex-align-center(auto,40px)
+    border-radius: 6px
+    padding-left: 10px
+    padding-right: 10px
+    background: #F9F9FD
+    .search-btn
+        padding: 0
+        border: none
+        background: transparent
+    .search-input
+        width: 100%
+        background: transparent
+        overflow: hidden
+        border: none
+        margin-left: 6px
+        @include text( inherit, auto , inherit ,  'SF Pro Display')
+
+.new-note
+    padding-left: 9px
+    margin-left: 10px
+    @include flex-align-center(172px,40px)
+    background: #FF9933
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.29)
+    border-radius: 6px
+
+.new-note 
+    img
+        margin-right: 10px
+        @include flex(auto,30px)
+    p
+        @include text( 16px, #FFFFFF , 100% , 'SF Pro Display')
+    
+.profile
+    @include flex-align-center(140px,40px)
+    background: #F9F9FD
+    border-radius: 6px
+    margin-left: 15px
+    padding-left: 3px
+
+.profile 
+    img 
+        @include size(23px, 23px)
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 2%), 0px 2px 4px rgb(0 0 0 / 1%), 0px 4px 8px rgb(0 0 0 / 2%), 0px 10px 20px rgb(0 0 0 / 2%)
+        padding: 6px
+        border-radius: 4px
+        margin-right: 12px
+        background: #FFFFFF
+    p 
+        @include text( 16px, #131315 , 100% , 'SF Pro Display')
+        font-weight: 600
+            
+// news
+
+.news
+    @include flex-center(100%,465px)
+    
+.news-inner
+    @include flex-between(87%, 100%, )
+
+.main-news
+    @include flex-space-between(370px, 430px)
+    flex-direction: column
+    @include background-img(url(../img/img.png), no-repeat , cover)
+
+.main-news-chapter
+    @include flex-between(100%, auto)
+    
+.weekend-chapter
+    @include text( 10px,  #4F5159 , 100% ,  'SF Pro Display')
+    @include flex(34px,13px)
+    padding: 3px 10px 3px  12px
+    text-transform: uppercase
+    background: #F9F9FD
+    border-radius: 5px 0px
+
+.news-title
+    @include flex(85%,131px)
+    flex-direction: column
+    @include text( 14px, rgba(255, 255, 255, 0.6) , 100% , 'SF Pro Display' )
+    .title-text
+        margin-bottom: 7px
+        @include text( 20px, #FFFFFF , 130% , 'SF Pro Display' )
+        font-weight: 600
+
+.other-news
+    @include flex-between(66%,100%)
+    flex-direction: column
+    
+.other-news-container-up
+    @include flex-between(100%,50%)
+    
+.sm-news-item
+    @include size(170px, fit-content)
+    margin-bottom: 30px
+    
+.sm-news
+    @include size(100%, 100%)
+    a
+    &:hover
+        h2
+            color: #1D32A8
+    
+.sm-news-img-container
+    position: relative
+    .sm-news-img
+        @include size(170px, 100px)
+    .sm-news-text
+        position: absolute
+        top: 0
+        padding: 5px 12px
+        text-transform: uppercase
+        background: #F9F9FD
+        border-radius: 5px 0px
+        @include text( 10px,  #4F5159 , 100% ,  'SF Pro Display')
+        @include flex(fit-content,fit-content)
+
+.sm-news-caption 
+    h2 
+        @include text( 14px , #131315 , 130%, 'SF Pro Display')
+        font-weight: 600
+        font-style: normal
+        margin-top: 6px
+    .samsung
+        color: red
+    span
+        @include text( 12px, #8D8F9B , 100% , 'SF Pro Display')
+        font-weight: 400
+        .icon-b
+            position: absolute
+            margin-top: 5px
+            margin-left: 9px
+            @include size(9px, 12px)   
+            @include background-img(url(../img/Vectors.svg), no-repeat ,  contain)
+
+.bugin-link
+    margin-top: 5px
+    @include text( 12px, auto , 100% , 'SF Pro Display')
+    font-style: normal
+    font-weight: 400
+
+.other-news-container-down
+    @include flex-between(100%,50%)
+    
+.autors
+    @include flex-center(100%,204px)
+       
+.autors-inner
+    @include flex-between(87%, 100%, )
+    flex-direction: column
+
+.autors-text-container
+    @include flex-space-between(100%,33%)
+    .autors-text
+        @include text( 30px, #131315 , 100% , 'SF Pro Display',500,normal)
+    .autors-more
+        margin-top: 13px
+        @include text( 16px, #8D8F9B , 100% , 'SF Pro Display',500,normal)
+        text-decoration: none
+        
+.autors-info
+    @include flex-between(100%,100%)
+   
+.autors-name 
+    img 
+        margin-top: 15px
+        @include size(69px, 69px)
+    p
+        margin-top: 7px
+        @include text( 12px, #131315 , auto , 'SF Pro Display',600)
+        text-align: center
+        
+// top-news
+.top-news
+    @include flex-center(100%,1345px)
+    
+.top-news-inner
+    @include flex-between(87%, 100%, )   
+    
+.top-news-article
+    width: 74%
+    
+.top-news-header
+    @include flex-space-between(auto, 50px)
+    padding-left: 20px
+    padding-right: 15px
+    border-radius: 6px
+    background: #F9F9FD
+
+.top-news-all
+    @include text( 16px,  #1D32A8, 100%, 'SF Pro Display',600)
+    margin-right: 35px
+
+.my-news
+    display: flex
+    flex: 1
+    @include text( 16px,  #8D8F9B, 100%, 'SF Pro Display',500)
+    img
+        @include size(16px, 16px)
+        margin-right: 10px
+    span
+        font-weight: 600
+        color: #1D32A8
+
+.top-news-setting
+    @include size(auto, 30px)
+
+.top-news-body
+    @include flex-between(auto,auto)
+    flex-wrap: wrap
+    
+.top-news-inner-container
+    @include size(270px, fit-content)
+    margin-top: 30px
+
+.top-news-list
+    @include flex(auto,auto)
+    margin-top: 10px
+    flex-wrap: wrap
+    list-style: none
+
+.top-news-caption h2
+    @include text( 22px,  #131315, 130%, 'SF Pro Display',700,normal)
+    margin-top: 17px
+
+.text-item
+    display: flex
+    align-items: center
+    &:not(:first-child)
+        margin-left: 14px
+
+.text-item p, 
+.text-item span
+    @include text( 14px, #8D8F9B , 100% , 'SF Pro Display',400)
+    
+.eye-img,
+.coment-img
+    margin-right: 6px
+
+.news-bk
+    position: relative
+    margin-top: 30px
+    overflow: hidden
+    @include size(auto, auto)
+    
+.news-bk-img  
+    @include size(100%, 360px)
+    object-fit: cover
+
+.news-bk-caption
+    position: absolute
+    left: 0
+    bottom: 0
+    @include flex(100%,100%)
+    flex-direction: column
+    justify-content: flex-end
+    box-sizing: border-box
+    padding: 20px
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.7) 54.69%)
+    border-radius: 6px
+
+.news-bk-autor
+    @include flex-align-center(auto,auto)
+    margin-bottom: 10px
+    @include text( 14px, #FFFFFF , 100% ,  'SF Pro Display',500,normal)
+    img
+        @include size(20px, 20px)
+        margin-right: 12px
+
+.news-bk-caption h2
+    @include text( 22px, #FFFFFF , 130% ,  'SF Pro Display',500,normal)
+    letter-spacing: normal
+
+.news-bk-list
+    @include flex(auto,auto)
+    margin-top: 10px
+    flex-wrap: wrap
+    list-style: none
+
+.news-bk-chapter-link
+    position: absolute
+    top: 0
+    left: 0
+    padding: 5px 12px
+    border-radius: 5px 0px
+    background: #F9F9FD
+    @include text( 10px , #4F5159 , 100% , 'SF Pro Display',700)
+    
+.top-news-open
+    @include flex-center(100%,50px)
+    background: #F9F9FD 
+    border-radius: 6px
+    margin-top: 30px
+    img 
+        @include size(24px, 24px)
+    p
+        @include text( 18px , #4F5159 , 120% , 'SF Pro Display')
+        margin-left: 10px
+    
+.top-news-discuss
+    width: 23%
+   
+.discuss
+    @include size(100% , auto)
+    background: #FFFFFF
+    border: 1px solid #F0F1F7
+    border-radius: 6px
+    
+.discuss-header
+    @include flex-between-two
+    padding: 15px 
+    border-bottom: 1px solid #F0F1F7
+    img
+        @include size(22px, 22px)
+        margin-right: 15px  
+    p
+        @include text( 18px , #131315 , 100% , 'SF Pro Display',500)
+        flex: 1
+
+.discuss-main
+    @include size(100%, 100%)
+    padding: 16px
+    box-sizing: border-box
+
+.discuss-item
+    width: 100%
+    margin-bottom: 30px
+
+.discuss-item-autor
+    @include flex-align-center-two
+    img
+        @include size(20px, 20px)
+        margin-right: 10px
+    p
+        @include text( 14px , #131315 , 100% , 'SF Pro Display',500,normal)
+    span
+        margin-left: 15px
+        @include text( 14px, #8D8F9B , 100% ,'SF Pro Display'  )
+    
+.discuss-item-body
+    margin-top: 10px
+    p
+        @include text( 16px , #131315 , 120% , 'SF Pro Display',500)
+        
+.discuss-item-exclusive 
+    &:hover
+        p
+            color: #1D32A8
+    p
+        margin-top: 10px
+        @include text( 14px , #131315 , 130% , 'SF Pro Display',700,normal)
+   
+//bugin tv
+
+.bugin-tv
+    @include flex-align-center-two
+    flex-direction: column
+    background: #131315
+    padding-bottom: 92px
+    border-radius: 12px 12px 0px 0px
+    box-sizing: border-box
+
+.container
+    width: 100%
+    @include flex-between-two
+    justify-content: center
+    
+.bugin-tv-header
+    @include flex-align-center-two
+    width: 89%
+    justify-content: space-between
+    padding-top: 36px
+    padding-bottom: 34px
+
+.tv-menu
+    @include flex-between-two
+    padding: 12px 30px !important
+    background: rgba(255, 255, 255, 0.05)
+    border-radius: 6px
+
+.tv-menu-item:not(:first-child)
+    margin-left: 32px
+
+.tv-menu-link
+    @include text( 16px ,  rgba(255, 255, 255, 0.4) , 130% , 'SF Pro Display',500,normal)
+    transition: .8s
+    &:hover
+        color: #FFFFFF
+    
+.nav
+    display: flex
+    flex-wrap: wrap
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+
+.bugin-tv-prev
+    @include size(50px, 44px)
+    background: rgba(255, 255, 255, 0.05)
+    border-radius: 6px 0px 0px 6px
+    border: none
+    padding: 0   
+
+.bugin-tv-next
+    @include size(50px, 44px)
+    background: rgba(255, 255, 255, 0.05)
+    border-radius: 0px 6px 6px 0px
+    border: none
+    padding: 0   
+
+.tv-slide-img
+    @include size(100%, 100%)
+    object-fit: cover
+    
+.bugin-tv-slider
+    @include size(100%, fit-content)
+    background: rgba(255, 255, 255, 0.05)
+    border-radius: 0px 6px 6px 0px
+    border: none
+    padding: 0   
+
+.tv-slide
+    width: fit-content
+    position: relative
+    height: 400px
+    border-radius: 12px
+    overflow: hidden
+    margin: 0 15px
+    box-sizing: border-box
+
+.tv-slide-img 
+    @include size(100%, 100%)
+    
+.slick-track
+    width: 100%
+
+.slider-wrapper
+    width: 100%
+    
+.tv-slide-caption
+    position: absolute
+    box-sizing: border-box
+    top: 0
+    left: 0
+    padding: 30px
+    flex-direction: column
+    @include flex(100%,100%)
+    justify-content: flex-end
+    align-items: flex-start
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.7) 54.69%)
+    h2
+        @include text( 30px , #FFFFFF , 115% , 'SF Pro Display',700,normal)
+        
+.new-news
+    @include flex-center(100%,100%)
+    margin-bottom: 40px
+    
+.new-news-inner
+    @include flex-between(87%, 100%, )
+    margin-top: 10px
+    
+.new-news-info
+    margin-top: 30px
+    @include size(270px, fit-content)
+    
+// look
+
+.look
+    @include flex-center(100%, 500px)
+    margin-bottom: 40px
+    @include background-img(url(../img/view-iframe.png), no-repeat , cover)
+    flex-direction: column
+    background-color: #F0F1F7
+    border-radius: 12px 12px 0px 0px
+    
+.header-look
+    @include flex-align-center(87%, 10%)
+    h2
+        @include text( 30px , #FFFFFF , 100% , 'SF Pro Display')
+        background: linear-gradient(271.56deg, #9B51E0 0%, #E051A7 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: #0B2349
+    
+.look-slider-wrapper
+    width: 100% 
+
+.look-slider
+    @include size(100%, fit-content)
+    background: rgba(255, 255, 255, 0.05)
+    border-radius: 0px 6px 6px 0px
+    border: none
+    padding: 0   
+    
+.look-slider-item
+    width: fit-content
+    position: relative
+    height: 400px
+    border-radius: 12px
+    overflow: hidden
+    margin: 0 15px
+    box-sizing: border-box
+
+//finance
+    
+.finance
+    @include flex-center(100%,auto)
+    background: #FFFFFF
+    border-radius: 12px 12px 0px 0px
+    margin-bottom: 40px
+
+.finance-inner
+    @include flex-center(91%,auto)
+    
+.finance-container
+    @include size(100%, 100% )
+    background: #F0F1F7
+    border-radius: 12px
+    padding: 30px
+    margin: 0 -30px
+    box-sizing: border-box
+
+.finance-header
+    @include flex-space-between(100%, 31px)
+    h2
+        @include text( 30px , #131315 , 100% , 'SF Pro Display',500)
+        flex: 1
+        margin-left: 15px
+    .finance-link
+        display: inline-block
+        padding: 3px 6px
+        background: #F9F9FD
+        border-radius: 4px
+        @include text( 14px , #8D8F9B , 100% , 'SF Pro Display')
+
+.finance-body
+    @include flex-between-two
+    padding-top: 30px
+
+.finance-body-left
+    @include size(65%, 400px)
+
+.finance-item
+    padding: 30px
+    box-sizing: border-box
+    @include size(770px, 400px)
+    background: #FFFFFF
+    border-radius: 6px
+    overflow: hidden
+    
+    
+.finance-autor    
+    @include flex-align-center(auto,auto)
+    img
+        @include size(30px, 30px)
+        margin-right: 12px
+
+.finance-emojie
+    margin-top: 30px
+    margin-bottom: 30px
+
+.finance-title
+    margin-bottom: 30px
+    @include text( 38px , #131315 , 110% , 'SF Pro Display',400,normal)
+    
+.finance-body-right
+    @include size(30%, 100%)
+    
+.finance-right-item
+    padding: 17px 0
+    box-shadow: inset 0px 1px 0px #dedfe5
+    
+.finance-item-text 
+    @include text( 16px , #131315 , 130% , 'SF Pro Display',700) 
+    
+//review
+
+.review
+    @include flex-j-center(100%,500px)
+    margin-bottom: 40px
+
+.inner-review
+    @include flex-j-center(86%,100%)
+   
+.review-container
+    @include flex-space-between(auto,auto)
+    @include size(100%, 100% )
+    background: #F9F9FD
+    border-radius: 12px
+    padding: 30px
+    box-sizing: border-box
+
+.review-inner-container
+    @include flex-space-between(970px, 380px)
+    padding: 30px
+    border-radius: 12px
+    background:  #FFFFFF
+    box-sizing: border-box
+
+.inner-container-left
+    @include flex-align-center-two
+
+.inner-right-container
+    @include flex(70%,100%)
+    flex-direction: column
+    justify-content: inherit
+    h2
+        @include text( 30px , #131315 , 100% , 'SF Pro Display',bold)
+    p
+        @include text( 20px , #131315 , 140% , 'SF Pro Display')
+    
+.review-news
+    display: flex
+    flex-wrap: wrap
+
+.review-news-btn
+    display: flex
+    align-items: flex-start
+    padding: 10px 18px
+    margin: 5px
+    background: #F0F1F7
+    border-radius: 40px 
+    border: none
+    transition: .8s
+    &:hover
+        background:#1D32A8
+        p
+            color: #FFFFFF
+    p
+        @include text( 18px , #131315 , 100% , 'SF Pro Display',400) 
+    img
+        border-radius: 50%
+        background: white
+        padding: 3px
+        margin-top: 2px
+        margin-left: 10px
+
+.subscribe
+    @include flex-between-two
+    
+label
+    display: block
+    @include text( 14px , #8D8F9B , 100% , 'SF Pro Display',400,normal) 
+    
+.email-input
+    width: 60%
+    .subscribe-input
+        width: 100%
+        flex: 1
+        border: none
+        padding: 10px 0
+        @include text( 14px , #8D8F9B , 100% , 'SF Pro Display') 
+        box-shadow: 0px 1px 0px #DEDFE6
+
+.email-btn
+    border: 1px solid #1D32A8
+    border-radius: 6px
+    @include text( 18px , #1D32A8 , 100% , 'SF Pro Display') 
+    background: white
+    padding: 20px 40px
+  
+.footer
+    @include flex-j-center(100%,130px)
+    background: #F9F9FD
+
+.inner-footer
+    @include size(87%, 100%)
+    
+.top-footer
+    @include flex-align-center-two
+    justify-content: center
+    background: #FFFFFF
+    border-radius: 0px 0px 6px 6px
+    
+.footer-nav
+    width: 95%
+    position: relative
+    padding: 0 25px
+
+.footer-nav,
+.footer-nav-link
+    padding: 18px 12px
+    font-size: 14px
+    line-height: 100%
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #8D8F9B
+    font-weight: 400
+    
+.main-footer
+    @include flex-align-center-two
+    padding: 30px 0
+
+.footer-logo
+    height: 20px   
+
+.footer-logo img
+    max-width: 120px
+    height: 20px
+    object-fit: contain
+
+.footer-span
+    margin: 0 15px
+    color: #DEDFE6
+
+.copyrigth p 
+    @include text( 14px , #8D8F9B , auto , 'SF Pro Display',400)
+    
+.copyrigth span
+    color: #4F5159
+    margin: 0
+    
+.after-footer
+    @include flex-center(100%,50px)
+    
+.inner-after-footer
+    @include flex-space-between(87%,100%)
+    
+.after-footer-nav
+    display: flex
+    flex-wrap: wrap
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+
+.after-footer-nav-item:not(:first-child)
+    margin-left: 15px
+
+.after-footer-nav-item a
+    @include text( 14px , #4F5159 , 100% , 'SF Pro Display',400)
+    
+.mobile
+    @include flex-align-center-two
+    p
+        @include text( 14px , #4F5159 , 100% , 'SF Pro Display')
+
+.mobile-icon
+    margin-left: 10px
+
+// POP-UP //
+
+.pop-up
+    display: none
+    @include size(100%, 100%)
+    position: fixed
+    left: 0
+    top: 0
+    background-color: rgba(0, 0, 0, .3)
+    z-index: 2
+
+.pop-up-container
+    display: flex
+    @include size(100%, 100%)
+
+.pop-up-body
+    position: absolute
+    padding: 20px
+    top: 60px
+    right: 85px
+    background: #FFFFFF
+    border: 1px solid
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 5%), 0px 10px 20px rgb(0 0 0 / 3%), 0px 20px 40px rgb(0 0 0 / 5%)
+    border-radius: 10px
+    transition: 0.5s
+   
+.form-autorith
+    position: relative
+    margin-bottom: 10px
+    background: #F9F9FD
+    border-radius: 6px
+    padding: 13px 20px
+    margin-top: 10px
+    .form-input
+        background: inherit
+        border: none
+        &::placeholder
+            @include text( 16px, #4F5159 , 100% , 'SF Pro Display', 500 ,normal)
+
+.login-btn
+    @include flex-center(100%,40px)
+    @include text( 16px, #FFFFFF , 100% , 'SF Pro Display', 500 ,normal)
+    background: #1D32A8
+    border-radius: 10px 10px 0px 0px
+
+.reg-btn
+    @include flex-center(100%,40px)
+    @include text( 16px, #4F5159 , 100% , 'SF Pro Display', 500 ,normal)
+    background: #F9F9FD
+    border-radius: 0px 0px 10px 10px
+   
+
+

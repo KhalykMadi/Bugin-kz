@@ -1,0 +1,335 @@
+@import "_mixins"
+
+.nav
+    display: flex
+    flex-wrap: wrap
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+
+.publication-header
+    @include flex-j-center(100%,93px)
+    // background: black
+
+.inner-publication-header
+    @include flex-space-between(87%,100%)
+    // background: red
+    .switch
+        position: relative
+        display: inline-block
+        width: 22px
+        height: 12px
+    input
+        opacity: 0
+        width: 0
+        height: 0
+    .slider
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: #8D8F9B
+        transition: .4s
+        border-radius: 12px
+    .slider::before
+        position: absolute
+        content: ""
+        height: 10px
+        width: 10px
+        left: 1px
+        bottom: 1px
+        background-color: #fff
+        transition: .4s
+        border-radius: 50%
+    
+.publication
+    padding-top: 30px
+    @include flex-j-center(100%,auto)
+   
+.inner-publication
+    @include flex-between(57%,100%)
+    flex-direction: column
+   
+.publication-intro
+    @include flex-align-center-two
+    
+.publication-category
+    @include flex-align-center-two
+    margin-right: 24px
+    p   
+        @include text( 16px, #131315 , 100% , SF Pro Display)
+        
+.publication-type
+    @include size(18px, 18px)
+    background: linear-gradient(91.3deg, #2D4EF5 0%, #FF008A 100%)
+    border-radius: 3px
+    margin-right: 8px
+
+.publication-name
+    margin-right: 24px
+    a
+        @include text( 16px, #131315 , 100% , SF Pro Display,400)
+      
+.nav-item
+    display: flex
+    p
+        @include text( 16px, #8D8F9B , 100% , SF Pro Display)
+
+.nav-item:not(:first-child)
+    margin-left: 25px
+
+.view-count
+    @include text( 16px, #8D8F9B , 100% , SF Pro Display)
+    
+.icon
+    @include background-img(url(.././publick-img/eye.svg), no-repeat , cover)
+    
+.publication-title
+    @include text( 40px, #131315 , 120% , SF Pro Display,700)
+    margin-top: 30px
+
+.publication-text
+    margin-top: 20px
+
+.support-box
+    @include flex-align-center-two
+    background: #F9F9FD
+    border-radius: 6px
+    padding: 5px 24px 5px 5px
+    width: fit-content
+    margin-top: 30px
+    
+.support-img
+    @include flex-center(60px,60px)
+    background: #FFFFFF
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 2%), 0px 2px 4px rgb(0 0 0 / 1%), 0px 4px 8px rgb(0 0 0 / 2%), 0px 10px 20px rgb(0 0 0 / 2%)
+    border-radius: 6px
+    overflow: hidden
+    margin-right: 15px
+    .icon-support
+        @include size(30px, 30px)
+        background: url(../publick-img/support.png) no-repeat center/contain
+    
+.support-caption 
+    margin-right: 10px
+    p
+        @include text( 14px, #4F5159 , 130% , SF Pro Display)
+        
+        
+    .support-call
+        @include text( 17px, #1D32A8 , 120% , SF Pro Display)
+        
+        margin-top: 2px
+
+.support-social
+    display: flex
+    a
+        width: 50px
+
+.publication-img
+    overflow: hidden
+    margin-top: 30px
+    img
+        width: 100%
+        max-height: 100%
+
+.publication-autor
+    @include flex-between-two
+    align-items: center
+    padding: 10px
+    margin-top: 20px
+    background: #F9F9FD
+    border-radius: 4px
+
+.autor-info
+    @include flex-align-center-two
+    img
+        @include size(30px, 30px)
+        margin-right: 15px
+    p
+        @include text( 18px, #131315 , 100% , SF Pro Display,600)
+        
+.autor-followers
+    background: linear-gradient(315deg, #1D32A8 0%, #326BFF 100%)
+    border-radius: 10px
+    padding: 3px 6px
+    height: fit-content
+    margin-left: 5px
+    p
+        @include text( 12px, #FFFFFF , 100% , SF Pro Display,700,normal)
+        
+
+.autor-subscribe
+    padding: 8px 10px
+    @include flex-align-center-two
+    background: #FFFFFF
+    border: 1px solid #DEDFE6
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 2px 0px rgba(0, 0, 0, 0.05)
+    border-radius: 4px
+    p
+        @include text( 14px, #131315 , 100% , SF Pro Display,500,normal)
+        margin-left: 10px
+
+.publication-hash 
+    margin-top: 20px
+    a
+        @include text( 16px, #8D8F9B , 100% , SF Pro Display)
+        padding: 7px 0
+
+.publication-social
+    display: flex
+    margin-top: 30px
+    .nav-link
+        @include flex-align-center-two
+        height: 40px
+        padding: 0 15px
+        border-radius: 3px
+        span
+            margin: 0 10px
+            display: inline-block
+            color: rgba(255, 255, 255, 0.3)
+        p
+            @include text( 14px, #FFFFFF , 100% , SF Pro Display)
+        img
+            max-width: 100%
+            max-height: 500px
+            object-fit: contain!important
+        
+.whatsapp
+    background: #0FB34C
+.facebook
+    background: #3B5998
+.vk
+    background: #4C6C91
+.telegram
+    background: linear-gradient(203.2deg, #37AEE2 21.67%, #1E96C8 70%), #C4C4C4
+.twitter
+    background: #55ACEE
+        
+.comments
+    padding-top: 30px
+    @include flex-j-center(100%,auto)
+   
+.inner-comments
+    @include flex-between(57%,100%)
+    flex-direction: column
+
+.comments-header
+    @include flex-align-center-two
+    justify-content: space-between
+
+.coments-title
+    @include flex-align-center-two
+    h2
+        @include text( 18px,  #131315 , 100% , SF Pro Display,600)
+        
+.line
+    width: 443px
+
+.comments-link
+    @include flex-align-center-two
+    padding: 3px 8px
+    border: 1px solid #DEDFE6
+    border-radius: 30px
+    margin-top: 3px
+    margin-left: 10px
+    p
+        @include text( 10px,  #4F5159 , 100% , SF Pro Display,600)
+        
+.comments-chapter
+    @include flex-align-center-two
+    .famous-chapter
+        @include flex-align-center-two
+        padding: 7px 20px
+        background: #FFFFFF
+        border: 1px dashed #DEDFE6
+        border-radius: 30px
+    .new-chapter
+        @include flex-align-center-two
+        padding: 7px 20px
+        background: #FFFFFF
+        border: 1px dashed #DEDFE6
+        border-radius: 30px
+        margin-left: 10px
+
+
+.form 
+  margin-top: 20px
+
+.castom-input 
+    position: relative
+    &:before 
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto 0
+        @include size(25px, 25px)
+        background: url('../publick-img/send.svg') no-repeat
+        background-size: cover
+    input 
+        @include size(100%, 25px)
+        padding: 8px
+        border: 1px solid #F0F1F7
+        border-radius: 6px
+
+.comments-autor
+    margin-top: 20px
+
+.comments-autor-info
+    @include flex-align-center-two
+
+.comments-autor-container
+    margin-left: 15px
+    flex: 1
+    p
+        @include text( 16px,  #131315 , 100% , SF Pro Display,700)
+        
+    span
+        @include text( 12px,   #4F5159 , 100% , SF Pro Display,400)
+        
+.counter-comment
+    @include flex-align-center-two
+    padding: 4px 10px
+    background: #F0FBF3
+    border-radius: 4px
+    p
+        @include text( 1apx,   #219653 , 100% , SF Pro Display,600)
+        
+.comment-text
+    margin-top: 20px
+    p
+        @include text( 16px,  #131315 , 140% , SF Pro Display,400)
+        
+    span
+        @include text( 14px,   #4F5159 , 215% , SF Pro Display,400)
+        
+
+.indira
+    margin-left: 30px
+
+.kuat
+    margin-left: 60px
+
+.answer
+    @include flex-align-center-two
+    img
+        margin-left: 10px
+        margin-right: 5px
+
+.open-other-comment
+    margin-top: 30px
+    @include size(100%, 50px, )
+    background: #F9F9FD
+    border-radius: 6px
+    @include flex-align-center-two
+    justify-content: center
+    margin-bottom: 30px
+    p
+        margin-left: 10px
+        @include text( 14px,   #4F5159 , 100% , 'SF Pro Display',400)
+        
+

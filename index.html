@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a class="menu-link" href="#">Саясат</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Экономика</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Weekend</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Спорт</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Қоғам</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Әлем</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Құқық</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Мұрағат</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">COVID-19</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <a class="info-link" href="#">Басқа бөлімдер</a>
+                    <div class="info-container">
+                        <a class="info-tel" href="tel: + 8 800-004-04-20">8 800 004 04 20</a>
+                        <p class="info-working-mode">(ДС-ЖМ 09:00-18:00)</p>
+                    </div>
+                </div>
+                <div class="menu-lang">
+                    <a href="#" class="lang lang-kaz">Ққ</a>
+                    <a href="#" class="lang lang-ru">Ру</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="Логотип компании"></a>
+                <p class="weather js-weather"></p>
+                <p class="city">Алматыда</p>
+                <div class="exchange-rates">
+                    <div class="usd">
+                        <img src="img/usd.png" alt="Знак доллар" class="usd-img">
+                        <p class="currency-price usd-text">420.76</p>
+                        <img class="currency-cursor" src="img/up.png" alt="">
+                    </div>
+                    <div class="eur">
+                        <img src="img/eur.png" alt="Знак доллар" class="eur-img">
+                        <p class="currency__text eur__text">498.6</p>
+                        <img class="currency__cursor" src="img/down2.png" alt="">
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="" method="get">
+                        <div class="search-container">
+                            <button class="search-btn">
+                                <img src="img/search-loupe 1.png" alt="">
+                            </button>
+                            <input class="search-input" placeholder="Іздеу" type="text">
+                        </div>
+                    </form>
+                </div>
+                <a href="#" class="new-note">
+                    <img src="/img/pen-edit.png" alt="">
+                    <p>Жаңа жазба</p>
+                </a>
+                <a href="#" class="profile">
+                    <img src="/img/Group.png" alt="">
+                    <p>Профиль</p>
+                </a>
+                <div class="pop-up">
+                    <div class="pop-up-container">
+                        <div class="pop-up-body">
+                            <div class="form-autorith">
+                                <input class="form-input" type="email" placeholder="E-Mail">
+                            </div>
+                            <div class="form-autorith">
+                                <input class="form-input" type="password" placeholder="Пароль">
+                            </div>
+                            <div class="autorith-btn">
+                                <a href="#" class="login-btn">Кіру</a>
+                                <a href="#" class="reg-btn">Тіркелу</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="news">
+        <div class="news-inner">
+            <div class="main-news">
+                <div class="main-news-chapter">
+                    <a href="#" class="weekend-chapter">Қоғам</a>
+                    <a href="#" class="chapter-news-arrows">
+                        <img src="img/arrows.png" alt="arrows">
+                    </a>
+                </div>
+                <a href="#" class="news-title">
+                    <h2 class="title-text">Емтихан тапсыруға шыққан: Алматыда 9 жыл бұрын жоғалып кеткен қыз табылды</h2>
+                    <span>2 сағат бұрын</span>
+                </a>
+            </div>
+            <div class="other-news">
+                <div class="other-news-container-up">
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/newsPhoto.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Weekend</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Топ-10 фильм: Отбасымен кино көресіз бе?</h2>
+                                    <span>2 сағат бұрын</span>
+                                    <span><i class="icon icon-b"></i></span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/Newsimg.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Covid-19</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Елімізде коронавирус жұқтырғандар саны күрт азайды</h2>
+                                    <span>2 сағат бұрын</span>
+                                    <span><i class="icon icon-b"></i></span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/news2.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Білім</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>«Білім беруді дәстүрлі түрде жалғастыруды талап етеміз»: депутаттар қос министрлікке шүйлікті</h2>
+                                    <span>Кеше</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/news3.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Әлем жаңалықтары</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Шетелдіктердің Қазақстанда тұру мерзімі ұзартылды</h2>
+                                    <span>2 сағат бұрын</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="other-news-container-down">
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/img4.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Қоғам</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Елімізде осы күнге дейін 1200 адам із-түзсіз жоғалып кеткен</h2>
+                                    <span>2 сағат бұрын</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/img5.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Weekend</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Елімізде осы күнге дейін 1200 адам із-түзсіз жоғалып кеткен</h2>
+                                    <span>2 сағат бұрын</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="publick.html">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/img6.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Hi-tech</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2 class="samsung">Samsung сатылымға шектеулі шыққан Galaxy Z Fold2 смартфонын таныстырды</h2>
+                                    <span>2 сағат бұрын</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sm-news-item">
+                        <a href="#">
+                            <div class="sm-news">
+                                <div class="sm-news-img-container">
+                                    <img src="/img/img7.png" alt="" class="sm-news-img">
+                                    <p class="sm-news-text">Weekend</p>
+                                </div>
+                                <div class="sm-news-caption">
+                                    <h2>Түркістан облысында қайтарымсыз грантпен кәсібін дамытқандар көбейіп келеді</h2>
+                                    <span>2 сағат бұрын</span>
+                                </div>
+                                <a class="bugin-link" href="#">Bugin holding</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="autors">
+        <div class="autors-inner">
+            <div class="autors-text-container">
+                <h2 class="autors-text">Авторлар</h2>
+                <a href="#" class="autors-more">Барлығын көру</a>
+            </div>
+            <div class="autors-info">
+                <a href="#" class="autors-name">
+                    <img src="img/avatar.png" alt="autor">
+                    <p>Асхат <br> Хасенғали</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-two.png" alt="autor">
+                    <p>Мирас</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-three.png" alt="autor">
+                    <p>Plumeria</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-four.png" alt="autor">
+                    <p>Күлтегін <br> Аспанұлы</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-five.png" alt="autor">
+                    <p>Айжан Мүтә</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-six.png" alt="autor">
+                    <p>Алмас</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-seven.png" alt="autor">
+                    <p>Kymbat <br> Slyambekov</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/Гулмира.png" alt="autor">
+                    <p>Гулмира</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-eigth.png" alt="autor">
+                    <p>Алишер</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-nine.png" alt="autor">
+                    <p>Маке <br> Журналист</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar-ten.png" alt="autor">
+                    <p>Бота <br> Куанышбек</p>
+                </a>
+                <a href="#" class="autors-name">
+                    <img src="img/avatar1.png" alt="autor">
+                    <p>Авторларға <br> қосылу</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="top-news">
+        <div class="top-news-inner">
+            <div class="top-news-article">
+                <div class="top-news-header">
+                    <a href="#" class="top-news-all">Барлық жаңалықтар</a>
+                    <a href="#" class="my-news">
+                        <img src="img/top-news.png" alt="">
+                        Менің таңдауым
+                        (<span>Кіру</span>)
+                    </a>
+                    <a href="#" class="top-news-setting">
+                        <img src="img/newsGroup.png" alt="#">
+                    </a>
+                </div>
+                <div class="top-news-body">
+                    <div class="top-news-inner-container">
+                        <div class="top-news-info">
+                            <a href="#">
+                                <img src="img//Group 5.png" alt="">
+                            </a>
+                            <a href="">
+                                <div class="top-news-caption">
+                                    <h2>Допинг дауы: МакГрегорды USADA офицерлері тексермек</h2>
+                                    <ul class="text top-news-list">
+                                        <li class="text-item">
+                                            <p>Кеше</p>
+                                        </li>
+                                        <li class="text-item">
+                                            <span>|</span>
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="coment-img" src="img/coment.svg" alt="#">
+                                            <p>0</p> 
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="eye-img" src="img/eye.png" alt="eye">
+                                            <p>12452</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/bg.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>Есеп комитеті білім <br> және ғылым <br> министрлігін <br> тексермек</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news-inner-container">
+                        <div class="top-news-info">
+                            <a href="#">
+                                <img src="img//Group 6.png" alt="">
+                            </a>
+                            <a href="">
+                                <div class="top-news-caption">
+                                    <h2>Эксклюзив: “Хәрри Поттер мен Азкабан тұтқыны”. Бірінші тарау</h2>
+                                    <ul class="text top-news-list">
+                                        <li class="text-item">
+                                            <p>Кеше</p>
+                                        </li>
+                                        <li class="text-item">
+                                            <span>|</span>
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="coment-img" src="img/coment.svg" alt="#">
+                                            <p>0</p> 
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="eye-img" src="img/eye.png" alt="eye">
+                                            <p>12452</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/doctor.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar.png" alt="autor">
+                                    <p>Асхат Қасенғали</p>
+                                </div>
+                                <h2>Пульмонолог Саттар Ералиев: Адам өкпесінің ауырғанын білмеуі де мүмкін</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news-inner-container">
+                        <div class="top-news-info">
+                            <a href="#">
+                                <img src="img//hi-tech.png" alt="">
+                            </a>
+                            <a href="">
+                                <div class="top-news-caption">
+                                    <h2>5G, тікұшақ, екпе: жалған ақпарат таратқан қазақстандық селебрити</h2>
+                                    <ul class="text top-news-list">
+                                        <li class="text-item">
+                                            <p>Кеше</p>
+                                        </li>
+                                        <li class="text-item">
+                                            <span>|</span>
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="coment-img" src="img/coment.svg" alt="#">
+                                            <p>0</p> 
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="eye-img" src="img/eye.png" alt="eye">
+                                            <p>12452</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/astana.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>Astana Hub акселераторына стартаптарды іріктеу басталды</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news-inner-container">
+                        <div class="top-news-info">
+                            <a href="#">
+                                <img src="img//finance.png" alt="">
+                            </a>
+                            <a href="">
+                                <div class="top-news-caption">
+                                    <h2>Қаржы нарығының негізгі ойыншысы болуды мақсат ететін компания</h2>
+                                    <ul class="text top-news-list">
+                                        <li class="text-item">
+                                            <p>Кеше</p>
+                                        </li>
+                                        <li class="text-item">
+                                            <span>|</span>
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="coment-img" src="img/coment.svg" alt="#">
+                                            <p>0</p> 
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="eye-img" src="img/eye.png" alt="eye">
+                                            <p>12452</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/house.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>“Шаңырақ” бағдарламасы арқылы үйді қалай алуға болады?</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news-inner-container">
+                        <div class="top-news-info">
+                            <a href="#">
+                                <img src="img//people.png" alt="">
+                            </a>
+                            <a href="">
+                                <div class="top-news-caption">
+                                    <h2>Адамды алалаудың алуан түрі: дискриминация деген не?</h2>
+                                    <ul class="text top-news-list">
+                                        <li class="text-item">
+                                            <p>Кеше</p>
+                                        </li>
+                                        <li class="text-item">
+                                            <span>|</span>
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="coment-img" src="img/coment.svg" alt="#">
+                                            <p>0</p> 
+                                        </li>
+                                        <li class="text-item">
+                                            <img class="eye-img" src="img/eye.png" alt="eye">
+                                            <p>12452</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="top-news-open" href="#">
+                    <img src="img/open.png" alt="open">
+                    <p>Тағы қарау</p>
+                </a>
+            </div>
+            <div class="top-news-discuss">
+                <div class="discuss">
+                    <div class="discuss-header">
+                        <img src="img/coment.svg" alt="coment">
+                        <p>Талқылау</p>
+                    </div>
+                    <div class="discuss-main">
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                                <span> 1мин </span>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                                <span> 8мин </span>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                        <div class="discuss-item">
+                            <div class="discuss-item-autor">
+                                <img src="img/avatar-seven.png" alt="autor">
+                                <p>Kymbat Slyambekov</p>
+                            </div>
+                            <div class="discuss-item-body">
+                                <p>Магистральда келе жатқан әрбір көлік қазірдің өзінде ықтимал қауіп болып табылады.</p>
+                            </div>
+                            <a href="#" class="discuss-item-exclusive">
+                                <p>Эксклюзив: “Хәрри Поттер мен ...</p>
+                            </a>
+                            <div class="discuss-item-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bugin-tv">
+        <div class="container">
+            <div class="bugin-tv-header">
+                <div class="tv-logo">
+                    <img src="img/heading.svg" alt="bugin-tv">
+                </div>
+                <ul class="nav tv-menu">
+                    <li class="nav-item tv-menu-item">
+                        <a class="tv-menu-link" href="#">Барлығы</a>
+                    </li>
+                    <li class="nav-item tv-menu-item">
+                        <a class="tv-menu-link" href="#">Спорт</a>
+                    </li>
+                    <li class="nav-item tv-menu-item">
+                        <a class="tv-menu-link" href="#">Политика</a>
+                    </li>
+                    <li class="nav-item tv-menu-item">
+                        <a class="tv-menu-link" href="#">Экономика</a>
+                    </li>
+                </ul>
+                <ul class="nav bugin-tv-arrows">
+                    <li class="nav-item">
+                        <button class="bugin-tv-prev">
+                            <img src="img/left.png" alt="left">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="bugin-tv-next">
+                            <img src="img/right.png" alt="right">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-wrapper">
+            <div class="bugin-tv-slider">
+                <div class="tv-slide">
+                    <div class="tv-slide-img">
+                        <img src="img/gena.png" alt="gena">
+                    </div>
+                    <a href="#">
+                        <div class="tv-slide-caption">
+                            <h2>«Канело» сотта сәтсіздікке ұшырады. Головкин Альвареспен кездеспеуі мүмкін</h2>
+                            <ul class="text top-news-list">
+                                    <li class="text-item">
+                                         <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                 </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="tv-slide">
+                    <div class="tv-slide-img">
+                        <img src="img/bike.png" alt="gena">
+                    </div>
+                    <a href="#">
+                        <div class="tv-slide-caption">
+                            <h2>«Канело» сотта сәтсіздікке ұшырады. Головкин Альвареспен кездеспеуі мүмкін</h2>
+                            <ul class="text top-news-list">
+                                <li class="text-item">
+                                    <p>Кеше</p>
+                                </li>
+                                <li class="text-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="text-item">
+                                    <img class="coment-img" src="img/coment.svg" alt="bike">
+                                    <p>0</p> 
+                                </li>
+                                <li class="text-item">
+                                    <img class="eye-img" src="img/eye.png" alt="eye">
+                                    <p>12452</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="tv-slide">
+                    <div class="tv-slide-img">
+                        <img src="img/gena.png" alt="gena">
+                    </div>
+                    <a href="#">
+                        <div class="tv-slide-caption">
+                            <h2>«Канело» сотта сәтсіздікке ұшырады. Головкин Альвареспен кездеспеуі мүмкін</h2>
+                            <ul class="text top-news-list">
+                                <li class="text-item">
+                                    <p>Кеше</p>
+                                </li>
+                                <li class="text-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="text-item">
+                                    <img class="coment-img" src="img/coment.svg" alt="#">
+                                    <p>0</p> 
+                                </li>
+                                <li class="text-item">
+                                    <img class="eye-img" src="img/eye.png" alt="eye">
+                                    <p>12452</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="tv-slide">
+                    <div class="tv-slide-img">
+                        <img src="img/gena.png" alt="gena">
+                    </div>
+                    <a href="#">
+                        <div class="tv-slide-caption">
+                            <h2>«Канело» сотта сәтсіздікке ұшырады. Головкин Альвареспен кездеспеуі мүмкін</h2>
+                            <ul class="text top-news-list">
+                                <li class="text-item">
+                                    <p>Кеше</p>
+                                </li>
+                                <li class="text-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="text-item">
+                                    <img class="coment-img" src="img/coment.svg" alt="#">
+                                    <p>0</p> 
+                                </li>
+                                <li class="text-item">
+                                    <img class="eye-img" src="img/eye.png" alt="eye">
+                                    <p>12452</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="tv-slide">
+                    <div class="tv-slide-img">
+                        <img src="img/bike.png" alt="gena">
+                    </div>
+                    <a href="#">
+                        <div class="tv-slide-caption">
+                            <h2>«Канело» сотта сәтсіздікке ұшырады. Головкин Альвареспен кездеспеуі мүмкін</h2>
+                            <ul class="text top-news-list">
+                                <li class="text-item">
+                                    <p>Кеше</p>
+                                </li>
+                                <li class="text-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="text-item">
+                                    <img class="coment-img" src="img/coment.svg" alt="#">
+                                    <p>0</p> 
+                                </li>
+                                <li class="text-item">
+                                    <img class="eye-img" src="img/eye.png" alt="eye">
+                                    <p>12452</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="new-news">
+        <div class="new-news-inner">
+            <div class="new-news-info">
+                <a href="#">
+                    <img src="img//Шымкент.png" alt="">
+                </a>
+                <a href="">
+                    <div class="top-news-caption">
+                        <h2>Шымкент әкімі жас ғалым ойлап тапқан залалсыздандыру технологиясымен таны...</h2>
+                        <ul class="text top-news-list">
+                            <li class="text-item">
+                                <p>Кеше</p>
+                            </li>
+                            <li class="text-item">
+                                <span>|</span>
+                            </li>
+                            <li class="text-item">
+                                <img class="coment-img" src="img/coment.svg" alt="#">
+                                <p>0</p> 
+                            </li>
+                            <li class="text-item">
+                                <img class="eye-img" src="img/eye.png" alt="eye">
+                                <p>12452</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="news-bk">
+                <div class="news-bk-img">
+                    <img src="img/newsbg.png" alt="news photo">
+                </div>
+                <a href="#">
+                    <div class="news-bk-caption">
+                        <div class="news-bk-autor">
+                            <img src="img/avatar-seven.png" alt="autor">
+                            <p>Kymbat Slyambekov</p>
+                        </div>
+                        <h2>Astana Hub акселераторына стартаптарды іріктеу басталды</h2>
+                        <ul class="text news-bk-list">
+                            <li class="text-item">
+                                <p>Кеше</p>
+                            </li>
+                            <li class="text-item">
+                                <span>|</span>
+                            </li>
+                            <li class="text-item">
+                                <img class="coment-img" src="img/coment.svg" alt="#">
+                                <p>0</p> 
+                            </li>
+                            <li class="text-item">
+                                <img class="eye-img" src="img/eye.png" alt="eye">
+                                <p>12452</p>
+                            </li>
+                        </ul>
+                        <a class="news-bk-chapter-link" href="#">Білім</a>
+                    </div>
+                </a>
+            </div>
+            <div class="new-news-info">
+                <a href="#">
+                    <img src="img//Әкім.png" alt="">
+                </a>
+                <a href="">
+                    <div class="top-news-caption">
+                        <h2>Шымкент әкімі жол көлік инфрақұрылымын дамыту бағытындағы жұмыстармен танысты</h2>
+                        <ul class="text top-news-list">
+                            <li class="text-item">
+                                <p>Кеше</p>
+                            </li>
+                            <li class="text-item">
+                                <span>|</span>
+                            </li>
+                            <li class="text-item">
+                                <img class="coment-img" src="img/coment.svg" alt="#">
+                                <p>0</p> 
+                            </li>
+                            <li class="text-item">
+                                <img class="eye-img" src="img/eye.png" alt="eye">
+                                <p>12452</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="news-bk">
+                <div class="news-bk-img">
+                    <img src="img/мент.png" alt="news photo">
+                </div>
+                <a href="#">
+                    <div class="news-bk-caption">
+                        <div class="news-bk-autor">
+                            <img src="img/avatar-seven.png" alt="autor">
+                            <p>Kymbat Slyambekov</p>
+                        </div>
+                        <h2>Шымкентте “Қауіпсіз жол” жедел профилактикалық іс-шарасы өтті</h2>
+                        <ul class="text news-bk-list">
+                            <li class="text-item">
+                                <p>Кеше</p>
+                            </li>
+                            <li class="text-item">
+                                <span>|</span>
+                            </li>
+                            <li class="text-item">
+                                <img class="coment-img" src="img/coment.svg" alt="#">
+                                <p>0</p> 
+                            </li>
+                            <li class="text-item">
+                                <img class="eye-img" src="img/eye.png" alt="eye">
+                                <p>12452</p>
+                            </li>
+                        </ul>
+                        <a class="news-bk-chapter-link" href="#">Білім</a>
+                    </div>
+                </a>
+            </div>
+        </div>
+     </section>
+     <section class="look">
+        <div class="header-look">
+            <h2>Көзқарас</h2>
+        </div>
+        <div class="look-slider-wrapper">
+            <div class="look-slider">
+                <div class="look-slider-item">
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/bike.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>Шымкентте “Қауіпсіз жол” жедел профилактикалық іс-шарасы өтті</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="look-slider-item">
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/Rectangle 25.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>Неге арналсаң, соны істе</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="look-slider-item">
+                    <div class="news-bk">
+                        <div class="news-bk-img">
+                            <img src="img/Rectangle 26.png" alt="news photo">
+                        </div>
+                        <a href="#">
+                            <div class="news-bk-caption">
+                                <div class="news-bk-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <h2>Ғұмар Қарашев кім?</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                                <a class="news-bk-chapter-link" href="#">Білім</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="finance">
+        <div class="finance-inner">
+            <div class="finance-container">
+                <div class="finance-header">
+                    <img src="img/icon.svg" alt="icon">
+                    <h2>Finance</h2>
+                    <a href="#" class="finance-link">
+                        finance.bugin.kz
+                        <img src="img/iconfin.svg" alt="">
+                    </a>
+                </div>
+                <div class="finance-body">
+                    <div class="finance-body-left">
+                        <div class="finance-item">
+                            <div class="finance-caption">
+                                <div class="finance-autor">
+                                    <img src="img/avatar-seven.png" alt="autor">
+                                    <p>Kymbat Slyambekov</p>
+                                </div>
+                                <img class="finance-emojie" src="img/icon-emojie.png" alt="">
+                                <h2 class="finance-title">Турлармен рейстерде қалай үнемдеуге болады, егер сіз аймақтарда тұрсаңыз</h2>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finance-body-right">
+                        <a href="#">
+                            <div class="finance-right-item">
+                                <p class="finance-item-text">Мен миллион теңгеге несие жинадым және оларды уақытында қайтара алмадым</p>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="finance-right-item">
+                                <p class="finance-item-text">Мен миллион теңгеге несие жинадым және оларды уақытында қайтара алмадым</p>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="finance-right-item">
+                                <p class="finance-item-text">Мен миллион теңгеге несие жинадым және оларды уақытында қайтара алмадым</p>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="finance-right-item">
+                                <p class="finance-item-text">Мен миллион теңгеге несие жинадым және оларды уақытында қайтара алмадым</p>
+                                <ul class="text news-bk-list">
+                                    <li class="text-item">
+                                        <p>Кеше</p>
+                                    </li>
+                                    <li class="text-item">
+                                        <span>|</span>
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="coment-img" src="img/coment.svg" alt="#">
+                                        <p>0</p> 
+                                    </li>
+                                    <li class="text-item">
+                                        <img class="eye-img" src="img/eye.png" alt="eye">
+                                        <p>12452</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="review">
+        <div class="inner-review">
+            <div class="review-container">
+                <img class="review-left-img" src="img/left.svg" alt="">
+                <div class="review-inner-container">
+                    <div class="inner-container-left">
+                        <img src="img/illustration.png" alt="">
+                    </div>
+                    <div class="inner-right-container">
+                        <h2>Апталық шолу</h2>
+                        <p>Ең қызықты айдарларға жазыл,өзекті жаңалықтарды жіберіп алма.
+                            Жалықтырмаймыз 😉
+                        </p>
+                        <div class="review-news">
+                            <button class="review-news-btn">
+                                <p>Саясат</p>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                            <button class="review-news-btn">
+                                <p>Экономика</p>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                            <button class="review-news-btn">
+                                <p>Weekend</p>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                            <button class="review-news-btn">
+                                <p>Құқық</p>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                            <button class="review-news-btn">
+                                <p>Қоғам</p>
+                                <img src="img/plus.png" alt="">
+                            </button><button class="review-news-btn">
+                                <p>Спорт</p>
+                                <img src="img/plus.png" alt="">
+                            </button><button class="review-news-btn">
+                                <p>Әлем жаңалықтары</p>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                        </div>
+                        <div class="subscribe">
+                            <div class="email-input">
+                                <label for="email">E-mail</label>
+                                <input class="subscribe-input" type="email" placeholder="example@bugin.kz">
+                            </div>
+                            <button class="email-btn">Жазылу</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="review-right-img" src="img/right.svg" alt="">
+            </div>
+        </div>
+     </section>
+     <footer class="footer">
+        <div class="inner-footer">
+            <div class="top-footer">
+                <ul class="footer-nav">
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Саясат</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Саясат</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Спорт</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Қоғам</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Қаржы</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Құқық</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Білім</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Головкин</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer">
+                <a href="#" class="footer-logo">
+                    <img src="img/media.png" alt="">
+                </a>
+                <span class="footer-span">|</span>
+                <div class="copyrigth">
+                    <p> 
+                        <span>© 2012-2019 «bugin.kz»</span>
+                        — Материалды көшіріп басқанда Bugin.kz сайтына гиперсілтеме міндетті түрде қойылуы тиіс. Авторлық құқықты сақтаңыз!
+                    </p>
+                </div>
+            </div>
+        </div>
+     </footer>
+     <div class="after-footer">
+        <div class="inner-after-footer">
+            <ul class="after-footer-nav">
+                <li class="after-footer-nav-item">
+                    <a href="#">Жоба туралы</a>
+                </li>
+                <li class="after-footer-nav-item">
+                    <a href="#">Редакциялық саясат</a>
+                </li>
+                <li class="after-footer-nav-item">
+                    <a href="#">Жарнама</a>
+                </li>
+                <li class="after-footer-nav-item">
+                    <a href="#">Көмек</a>
+                </li>
+                <li class="after-footer-nav-item">
+                    <a href="#">Қолдану ережелері</a>
+                </li>
+                <li class="after-footer-nav-item">
+                    <a href="#">Жұмыс</a>
+                </li>
+            </ul>
+            <div class="mobile">
+                <p>Қосымшаны жүктеп алыңыз</p>
+                <a class="mobile-icon" href="#">
+                    <img src="img/apple.png" alt="apple">
+                </a>
+                <a class="mobile-icon" href="#">
+                    <img src="img/android.png" alt="android">
+                </a>
+            </div>
+        </div>
+     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
