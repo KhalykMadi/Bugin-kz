@@ -325,6 +325,10 @@
     .header-bottom{
         height: 100%;
     }
+    .logo-img{
+        width: 70px;
+        height: 26px;
+    }
     .news-inner{
         width: 100%;
         align-items: center;
