@@ -26,7 +26,7 @@ $(function(){
     $('.footer-nav').slick({
         infinite: true,
         dots: false,
-        arrows: true,
+        arrows: false,
         slidesToShow: 4,
         variableWidth: true,
         slidesToScroll: 1,

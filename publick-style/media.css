@@ -1,0 +1,130 @@
+@media screen and (max-width: 992px) {
+    .autor-info p{
+        font-size: 16px;
+    }
+    .autor-followers p{
+        font-size: 12px;
+    }
+    .line{
+        display: none;
+    }
+    .custom-input{
+        width: 96%;
+    }
+    .publication-social .nav-link{
+        height: 36px;
+        padding: 0 10px;
+    }
+    .publication-social{
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prev-page img{
+        width: 40px;
+        height: 20px;
+    }
+    .inner-publication{
+        width: 87%;
+    }
+    .publication-intro{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 60px;
+    }
+    .publication-title{
+        font-size: 24px;
+    }
+    .publication-name-a,
+    .publication-category p,
+    .nav-item p,
+    .view-cont{
+        font-size: 14px;
+    }
+    .support-img{
+        width: 55px;
+        height: 55px;
+    }
+    .support-caption .support-call{
+        font-size: 15px;
+    }
+    .comment-text {
+        margin-top: 10px;
+    }
+    .inner-comments{
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .support-img{
+        display: none;
+    }
+    .support-caption p{
+        font-size: 12px;
+        line-height: 120%;
+    }
+    .support-caption .support-call{
+        font-size: 14px;
+    }
+    .support-box{
+        padding: 5px;
+    }
+    .autor-subscribe{
+        display: none;
+    }
+    .autor-info p{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .publication-hash a{
+        font-size: 14px;
+        padding: 4px 0;
+    }
+    .publication-social .nav-link{
+        height: 30px;
+        margin: 0;
+    }
+    .publication-social{
+        height: 100px;
+    }
+    .nav-item:not(:first-child){
+        margin-left: 0;
+    }
+    .nav-item:nth-child(1n+1){
+        margin-right: 15px;
+    }
+    .autor-followers p {
+        font-size: 12px;
+    }
+    .comments-chapter .new-chapter,
+    .comments-chapter .famous-chapter{
+        padding: 7px 12px;
+    }
+    .famous-chapter p,
+    .new-chapter p{
+        font-size: 12px;
+    }
+    .comment-input{
+        width: 94%;
+    }
+    .counter-comment{
+        display: none;
+    }
+    .comments-autor-container p{
+        font-size: 12px;
+    }
+    .autor-photo{
+        width: 40px;
+        height: 40px;
+    }
+    .comment-text span{
+        font-size: 12px;
+
+    }
+    .comment-text p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,429 @@
+@media screen and (max-width: 1200px){
+    .weather,
+    .city,
+    .currency-price,
+    .currency-price,
+    .usd,
+    .eur,
+    .search-container,
+    .info-container,
+    .other-news-container-up,
+    .new-news  {
+        display: none;
+    } 
+    .main-news{
+        width: 55%;
+        border-radius: 6px;
+        background-position: center;
+    }
+    .other-news{
+        width: 40%;
+    }
+    .other-news-container-down{
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        height: 430px;
+    }
+    .sm-news-item{
+        width: 100%;
+    }
+    .sm-news-img-container{
+        height: 130px;
+    }
+    .sm-news-img-container .sm-news-img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+    .autors-name:nth-child(5n-3){
+        display: none
+    }
+    .top-news{
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    .top-news-article{
+        width: 100%;
+    }
+    .top-news-discuss{
+        display: none;
+    }
+    .tv-slide-caption{
+        padding: 20px;
+    }
+    .tv-slide-caption h2{
+        font-size: 24px;
+    }
+    .finance-body-left{
+        width: 67%;
+    }
+    .finance-item{
+        width: 100%;
+    }
+    .finance-title{
+        font-size: 32px;
+    }
+    .finance-item-text{
+        font-size: 14px;
+    }
+    .inner-right-container{
+        width: 63%;
+    }
+    .inner-right-container h2{
+        font-size: 25px;
+    }
+    .inner-right-container p{
+        font-size: 19px;
+        line-height: 130%;
+    }
+    .review-news-btn p{
+        font-size: 14px;
+    }
+    .review-news-btn img{
+        margin-top: 0;
+    }
+    .email-btn{
+        font-size: 15px;
+        padding: 0 35px;
+    }
+    .footer-nav, .footer-nav-link{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu{
+        width: 70%
+    }
+    .info{
+        width: 23%;
+    }
+    .menu-lang{
+        width: 7%;
+    }
+    .news-bk-main,
+    .top-news-inner-container-main{
+        width: 32%;
+        border-radius: 6px;
+    }
+    .top-news-info img{
+        width: 100%;
+    }
+    .tv-menu{
+        display: none;
+    }
+    .tv-slide-caption h2{
+        font-size: 22px;
+    }
+    .tv-slide-img{
+        width: 360px
+    }
+    .finance-title{
+        font-size: 28px;
+    }
+    .inner-right-container h2{
+        font-size: 22px;
+    }
+    .inner-right-container p{
+        font-size: 14px;
+    }
+    .review-news-btn img{
+        display: none;
+    }
+    .review-news-btn-text,
+    .label,
+    .email-input .subscribe-input{
+        font-size: 12px;
+    }
+    .email-btn{
+        font-size: 13px;
+        padding: 0 25px;
+    }
+    .slick-arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info,
+    .lang,
+    .new-note p,
+    .profile p{
+        display: none;
+    }
+    .header-top{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu .menu-link{
+        font-size: 12px;
+    }
+    .new-note{
+        width: 26px;
+        height: 35px;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .new-note img{
+        width: 20px;
+        height: 20px;
+    }
+    .profile{
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 2%), 0px 2px 4px rgb(0 0 0 / 1%), 0px 4px 8px rgb(0 0 0 / 2%), 0px 10px 20px rgb(0 0 0 / 2%);
+    }
+    .news-inner{
+        flex-direction: column;
+    }
+    .main-news{
+        width: 100%;
+        min-height: 210px;
+    }
+    .other-news{
+        width: 100%;
+    }
+    .other-news-container-down{
+        flex-direction: initial;
+        align-items: baseline;
+        margin-top: 15px;
+        overflow-x: scroll;
+        overflow-y: initial;
+        flex-wrap: nowrap;
+        height: fit-content;
+        padding-left: 0;
+    }
+    .other-news-container-down::-webkit-scrollbar{
+        width: 0;
+    }
+    .sm-news{
+        width: 150px;
+    }
+    .sm-news-item:not(:first-child){
+        margin-left: 15px;
+    }
+    .autors-name:nth-child(2n){
+        display: none
+    }
+    .autors-text-container .autors-text{
+        font-size: 26px;
+    }
+    .top-news-body{
+        flex-direction: column;
+    }
+    .top-news-inner-container-main{
+        width: 100%;
+    }
+    .top-news-img{
+        height: 200px;
+    }
+    .news-bk-main{
+        width: 100%;
+        height: 280px;
+    }
+    .news-bk-img{
+        height: 100%;
+    }
+    .news-bk-img img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    .new-news-bk{
+        height: 300px;
+    }
+    .finance-body{
+        flex-direction: column;
+    }
+    .finance-body-left,
+    .finance-body-right{
+        width: 100%;
+    }
+    .finance-item-text{
+        font-size: 16px;
+    }
+    .inner-container-left{
+        display: none;
+    }
+    .inner-right-container{
+        width: 100%;
+    }
+    .subscribe{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .review{
+        height: 430px;
+    }
+    .review-inner-container{
+        height: fit-content;
+    }
+    .review-left-img,
+    .review-right-img{
+        display: none;
+    }
+    .email-btn{
+        padding: 10px 25px;
+    }
+    .inner-right-container-text{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 120%;
+    }
+    .footer{
+        height: fit-content;
+    }
+    .main-footer{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .footer-span{
+        display: none;
+    }
+    .copyrigth p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .inner-after-footer{
+        flex-direction: column;
+    }
+    .after-footer-nav-item{
+        margin-left: 10px;
+    }
+    .after-footer-nav{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .after-footer-nav::-webkit-scrollbar{
+        width: 0;
+    }
+    .after-footer-nav-item{
+        white-space: nowrap;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 65px;
+    }
+    .header-top{
+        display: none;
+    }
+    .header-bottom{
+        height: 100%;
+    }
+    .news-inner{
+        width: 100%;
+        align-items: center;
+    }
+    .other-news{
+        width: 90%;
+    }
+    .autors-text-container{
+        height: 20%;
+    }
+    .autors-text-container .autors-more{
+        margin: 0;
+        font-size: 12px;
+    }
+    .autors-text-container .autors-text{
+        font-size: 22px;
+    }
+    .autors-name img{
+        width: 54px;
+        height: 54px;
+    }
+    .autors-name:nth-child(5n-2){
+        display: none;
+    }
+    .top-news-inner{
+        width: 92%;
+    }
+    .top-news-setting{
+        display: none;
+    }
+    .top-news-all{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .my-news{
+        font-size: 14px;
+        flex: auto;
+        white-space: nowrap;
+    }
+    .my-news img{
+        width: 13px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    .top-news-caption h2{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .news-bk-caption h2{
+        line-height: 120%;
+    }
+    .news-bk-main{
+        display: none;
+    }
+    .top-news-inner-container-main:nth-child(3n+3){
+        display: none;
+    }
+    .tv-logo img{
+        width: 105px;
+        height: 60px;
+    }
+    .bugin-tv-arrows{
+        width: 100px;
+        height: 50px;
+    }
+    .tv-slide-img{
+        width: 325px;
+    }
+    .look{
+        height: fit-content;
+    }
+    .header-look{
+        margin-top: 30px;
+    }
+    .finance-container{
+        padding: 10px;
+    }
+    .finance-body-left{
+        height: fit-content;
+    }
+    .finance-item{
+        height: fit-content;
+        padding: 30px 15px 15px 15px;
+    }
+    .finance-title {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    .finance-emojie{
+        display: none;
+    }
+    .finance-right-item:nth-child(2n+2){
+        display: none;
+    }
+    .review-news-btn{
+        pad: 6px 9px;
+    }
+    .review-news-btn-text{
+        font-size: 12px;
+    }
+    .pop-up-body{
+        top: 10px;
+        right: 38px;
+    }
+}
