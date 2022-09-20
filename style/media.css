@@ -25,6 +25,9 @@
         overflow-y: scroll;
         height: 430px;
     }
+    .other-news-container-down::-webkit-scrollbar{
+        width:0;
+    }
     .sm-news-item{
         width: 100%;
     }
@@ -328,6 +331,9 @@
     }
     .other-news{
         width: 90%;
+    }
+    .autors{
+        margin-top: 10px;
     }
     .autors-text-container{
         height: 20%;
